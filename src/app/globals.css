@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff; /* White background for light mode */
+  --foreground: #171717; /* Dark text for light mode */
+  --primary: #6b00b6; /* A vibrant purple for light mode components */
+  --accent: #a29bfe; /* Light purple for accent */
+}
+
+.dark {
+  --background: #000000; /* Black background for dark mode */
+  --foreground: #e6e6e6; /* Light text for dark mode */
+  --primary: #6a0dad; /* A deep purple for dark mode components */
+  --accent: #b388ff; /* Lighter purple accent for hover or focus */
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.poppins-regular {
+  font-weight: 400;
+}
+
+.poppins-light {
+  font-weight: 300;
+}
+
+.poppins-thin {
+  font-weight: 100;
+}
+
+.poppins-semibold {
+  font-weight: 600;
+}
+
+.poppins-bold {
+  font-weight: 700;
+}
